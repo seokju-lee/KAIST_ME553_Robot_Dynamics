@@ -5,7 +5,7 @@
 #define _MAKE_STR(x) __MAKE_STR(x)
 #define __MAKE_STR(x) #x
 
-#include "exercise1_STUDENTID.hpp"
+#include "exercise1_20233536.hpp"
 #include "raisim/RaisimServer.hpp"
 
 
@@ -29,6 +29,7 @@ int main(int argc, char* argv[]) {
   auto debugSphere = server.addVisualSphere("debug_sphere", 0.02);
   debugSphere->setColor(1,0,0,1);
   debugSphere->setPosition(getEndEffectorPosition(jointNominalConfig));
+  std::cout << "Position of Debug sphere: " << getEndEffectorPosition(jointNominalConfig) << "\n";
 
   // solution sphere
   auto answerSphere = server.addVisualSphere("answer_sphere", 0.02);
@@ -36,6 +37,7 @@ int main(int argc, char* argv[]) {
   raisim::Vec<3> pos;
   aliengo->getFramePosition("FR_foot_fixed", pos);
   answerSphere->setPosition(pos.e());
+  std::cout << "Poistion of Solution sphere: " << pos.e() << "\n";
 
   // visualization
   server.launchServer();
