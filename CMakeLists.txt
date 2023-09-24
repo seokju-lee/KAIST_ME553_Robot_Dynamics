@@ -9,7 +9,7 @@ create_executable(exercise1 src/exercise1.cpp)
 create_executable(exercise2 src/exercise2.cpp)
 create_executable(exercise3 src/exercise3.cpp)
 create_executable(exercise4 src/exercise4.cpp)
-#create_executable(exercise5 src/exercise5.cpp)
+create_executable(exercise5 src/exercise5.cpp)
 #create_executable(exercise6 src/exercise6.cpp)
 #create_executable(exercise7 src/exercise7.cpp)
 
@@ -19,4 +19,6 @@ create_executable(rotation_example_euler_angles src/rotation_example_euler_angle
 
 # exam
 create_executable(midterm_part2 src/midterm_part2.cpp)
+create_executable(final_exam src/final_exam.cpp)
+
 
